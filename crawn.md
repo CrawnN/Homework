@@ -18,11 +18,22 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql>
 ```
 ## 权限管理
-
-
-
-
-
+### 添加用户并附权限
+- grant 权限 on 数据库或表 to 用户名@’登陆IP地址’
+    - 权限：查询、插入、更新、删除 或 全部权限（all privileges ）
+    - 数据库或表：数据库名 或 数据库.表名
+- 或 跟数据库下，超级用户执行：insert into user ...
+### 更新用户密码
+- update user set password=password('新密码') where 条件（锁定用户）;
+### 更改用户权限或删除用户
+- rovoke 权限 on 数据库或表 to 用户名@’登陆IP地址’
+    - 权限：查询、插入、更新、删除 或 全部权限（all privileges ）
+    - 数据库或表：数据库名 或 数据库.表名
+- 或 跟数据库下，超级用户执行：delete from user where user='用户名' and host='IP地址';//删除用户所有权限
+### 注意
+- 执行完权限操作后最好执行：flush privileges; 使权限加载
+- show grants; //查看当前用户权限
+- show grants for 用户名;//查看特定用户权限
 ## 数据库的创建、删除
 ### 创建数据库
 - show databases;//显示当前拥有的所有的数据库
@@ -413,4 +424,116 @@ insert into aa (id,title) VALUES(20,'King')
 drop view aa;
 ```
 ![result](https://i.imgur.com/VpUZGQA.png)
+
+## 事务处理
+- 1.在 MySQL 中只有使用了 Innodb 数据库引擎的数据库或表才支持事务。
+- 2.事务处理可以用来维护数据库的完整性，保证成批的 SQL 语句要么全部执行，要么全部不执行。
+- 3.事务用来管理 insert,update,delete 语句
+- 4.事务是必须满足4个条件（ACID）：原子性（Atomicity，或称不可分割性）、一致性（Consistency）、隔离性（Isolation，又称独立性）、持久性（Durability）。
+### 设定是否自定提交
+- SET AUTOCOMMIT=0 禁止自动提交 
+- SET AUTOCOMMIT=1 开启自动提交
+- 在默认的情况下，MySQL从自动提交（autocommit）模式运行，这种模式会在每条语句执行完毕后把它作出的修改立刻提交给数据库并使之永久化。
+### 事务回滚
+- <b>事务的回滚正确的理解应该是，如果事务中所有sql语句执行正确则需要自己手动提交commit；否则有任何一条执行错误，需要自己提交一条rollback，这时会回滚所有操作，而不是commit会给你自动判断和回滚。</b>
+### 运行事务语句及实例 
+- begin;(操作语句));...;commit；//若有异常会直接执行回滚操作，退出到<br>
+##### begin开始前的状态:
+![result](https://i.imgur.com/7REAFLX.png)
+#### 运行包含错误的事务
+```sql
+begin;
+insert into title_copy values(7, 'abc');
+insert into title_copy (id,title) values(8, 'abc');
+UPDATE title_copy set title='King' WHERE id=6;
+COMMIT;
+```
+执行select结果：<br/>
+![result](https://i.imgur.com/nxRZ8pQ.png)
+- 结果原因分析：
+    - 运行到第3行由于title不能重复报错，下面两行没有执行，即commit没执行，因此事务没有结束，语句一执行成功并向表中添加数据；因此查询会包含
+    |   7|  abc|.<br/>
+##### 此时若执行commit操作：
+```sql
+COMMIT;
+```
+执行select结果：<br>
+![result](https://i.imgur.com/omCD0Se.png)
+##### 此时若执行rollback操作：
+```sql
+ROLLBACK;
+```
+执行select结果：<br/>
+![result](https://i.imgur.com/0gSaK8Y.png)
+### 运行正确的事务流程
+```sql
+begin;
+insert into title_copy values(7, 'abc');
+insert into title_copy (id,title) values(8, 'abc');
+UPDATE title_copy set title='King' WHERE id=6;
+COMMIT;
+```
+执行select结果：<br/>
+![result](https://i.imgur.com/vxQDcA3.png)
+## 数据库备份
+### 导出数据库或表
+- mysqldump -u用户名 -h用户IP -p 数据库名 或 数据库 表名> 目标文件夹\数据库名.sql
+    - mysqldump -uroot -hlocalhost -p workflow > D:\workflow.sql
+    - --database 数据库1 数据库2  导出多个数据库
+    - --all-databases  导出所有数据库  
+- 输入用户密码
+### 导入数据库或表
+- mysql -u root -h localhost -p 数据库名< 目标文件夹\数据库名.sql
+<b>注意：备份前应先创建数据库名</b>
+    - mysqldump -uroot -hlocalhost -p workflow_copy > D:\workflow.sql
+- 输入用户密码
+- 或 登录到数据库中，使用Source命令: source 目标文件夹\数据库名.sql
+    - source D:\workflow.sql
+## 日志管理
+- BinLog配置
+    - log-bin="C:\Mysql\log"
+    - expire_logs_days=10
+    - max_binlog_size=100M
+    - 重启MySQL服务
+
+- 通过变量查询可以查看配置的日志是否开启
+    -show VARIABLES LIKE '%log_%';
+- 查看二进制文件命令
+    - SHOW BINARY LOGS;
+- 查看二进制操作记录，Insert，Update语句
+    - show binlog events;
+- 利用BinLog恢复数据库
+    - mysqlbinlog --stop-datetime="2017-04-17 22:02:00" "C:\mysql\log.000001" |mysql -u root –p
+
+- ErrorLog配置
+    - log-error=[path/[file_name]] show variables LIKE 'log_error';
+
+- 慢日志查询配置
+    - log-slow-queries[=path/[filename]] 
+    - long_query_time=10
+    - show variables like '%slow%';
+## 同步复制
+### Master配置
+    [mysqld] 
+    log-bin="D:/MYSQLDataBase/binlog" expire_logs_days=10 
+    max_binlog_size=100M 
+    server-id=1 
+    binlog-do-db=test 
+    binlog-ignore-db=mysql
+### Slave配置
+    [mysql]
+    default-character-set=utf8
+    log_bin="C:/MYSQLLOG/binlog"
+    expire_logs_days=10
+    max_binlog_size=100M
+
+    [mysqld]
+    server-id=2
+    change master to master_host='192.168.1.100', 
+    master_user='repl',
+    master_password='123',
+    master_log_file='binlog.000004', 
+    master_log_pos=107;
+
+
 
