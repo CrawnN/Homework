@@ -1,6 +1,0 @@
-JOptionPane jOptionPane=new JOptionPane("您输入的信息不正确，请查验后重新输入！",
-                    JOptionPane.ERROR_MESSAGE,JOptionPane.OK_CANCEL_OPTION);
-            //jOptionPane.setLocation(800, 400);
-            //this.setVisible(false);
-            jOptionPane.showMessageDialog(this, "您输入的信息不正确，请查验后重新输入！");
-            jOptionPane.setVisible(true);
