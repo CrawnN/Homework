@@ -1,0 +1,11 @@
+{
+  "code": 200,
+  "data": {
+    "userId": 5,
+    "userName": "crawn",
+    "password": "craw",
+    "category": 0,
+    "token": "0"
+  },
+  "message": "用户更新成功！"
+}

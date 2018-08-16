@@ -1,6 +1,9 @@
 package com.glodon.tot.mappers;
 
 import com.glodon.tot.models.Blog;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.session.RowBounds;
+
 import java.util.List;
 
 public interface BlogMapper {
@@ -43,4 +46,10 @@ public interface BlogMapper {
      * @mbggenerated
      */
     int updateByPrimaryKey(Blog record);
+
+    void updataBlogReadTime(long blogId);
+
+    List<Blog> selectBlogsByUserId(long userId,RowBounds rowBounds);
+
+    List<Blog> selectHotBlog(int blogNum);
 }

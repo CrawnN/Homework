@@ -1,0 +1,11 @@
+{
+  "code": 200,
+  "data": {
+    "userId": 5,
+    "userName": "crawn",
+    "password": null,
+    "category": 0,
+    "token": "77+9dHEJN++/vUVRR++/vUFx77+977+9C++/vSxUaHUgQXVnIDE2IDE2OjEyOjI5IENTVCAyMDE4\r\nLDM2MDA="
+  },
+  "message": "登陆成功！"
+}

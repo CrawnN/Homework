@@ -2,6 +2,8 @@ package com.glodon.tot.service;
 
 import com.glodon.tot.mappers.CommentMapper;
 import com.glodon.tot.models.Comment;
+import org.apache.ibatis.session.SqlSession;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +27,22 @@ public class CommentService {
     }
 
     /**
+     * 获取评论，根据博客的id
+     * 根据offset和rows分页
+     * offect：分页起始条（不包括offset）
+     * 分页从上到下根据评论时间的排序
+     * 时间越早放在前面
+     * rows：查询行数
+     * @param blogId
+     * @return
+     */
+    public LinkedList<Comment> selectSomeCommentsOfBlog(long blogId, int offset, int rows) {
+        LinkedList<Comment> commentList = null;
+        commentList = commentMapper.selectByBlogIdWithOffset(blogId, offset, rows);
+        return commentList;
+    }
+
+    /**
      * 插入一条评论品论记录
      *
      * @param comment
@@ -43,7 +61,7 @@ public class CommentService {
      *
      * @param blogId 博客id
      * @param userId 评论人id
-     * @return 返回受影响行数
+     * @return 受影响的行数
      */
     public int deleteComment(Long blogId, Long userId) {
         int i = 0;
@@ -51,6 +69,30 @@ public class CommentService {
             i = commentMapper.deleteByBlogIdOrUserId(blogId, userId);
         }
         return i;
+    }
+
+    /**
+     * 根据评论Id删除评论
+     * @param commentId
+     * @return
+     */
+    public int deleteCommentById(long commentId) {
+        int ri;
+        ri = commentMapper.deleteByPrimaryKey(commentId);
+        return ri;
+    }
+
+
+    /**
+     * 根据博客评论Id查找对应的评论
+     *
+     * @param commentId
+     * @return 返回Comment或者null
+     */
+    public Comment findCommentByCommentId(long commentId) {
+        Comment comment = null;
+        comment = commentMapper.selectByPrimaryKey(commentId);
+        return comment;
     }
 
 

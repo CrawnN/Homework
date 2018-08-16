@@ -1,5 +1,8 @@
 package com.glodon.tot.dto;
 
+/**
+ * @author Crawn
+ */
 public class ResponseDate {
     private int code;
     private Object data;

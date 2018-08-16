@@ -3,6 +3,6 @@ spring:
     name: maybatis-tot-demo
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.1.84.60:3306/blogdatabase?useUnicode=true&amp;characterEncoding=utf8
+    url: jdbc:mysql://10.1.84.60:3306/blogdatabase?useUnicode=true&amp;characterEncoding=utf8&amp;seSSL=true
     username: root
     password: root

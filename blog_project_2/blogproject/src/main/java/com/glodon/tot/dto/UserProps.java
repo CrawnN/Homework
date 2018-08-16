@@ -1,5 +1,8 @@
 package com.glodon.tot.dto;
 
+/**
+ * @author  Crawn 前端用户Dto  相对后端user模型增加token属性
+ */
 public class UserProps {
     private long userId;
     private String userName;

@@ -52,4 +52,13 @@ public class UserService {
     public int update(User user){
         return userMapper.updateByPrimaryKey(user);
     }
+
+    /**
+     * 使用关键字获取用户信息
+     * @param userId 用户id
+     * @return User 用户  不存在为空
+     */
+    public User select(Long userId){
+        return userMapper.selectByPrimaryKey(userId);
+    }
 }

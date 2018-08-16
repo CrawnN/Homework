@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-08-16T15:34:55.582+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "I/O error while reading input message; nested exception is java.io.IOException: Stream closed",
+  "path": "/api/deleteuser"
+}

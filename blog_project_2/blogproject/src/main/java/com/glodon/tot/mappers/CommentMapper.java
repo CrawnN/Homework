@@ -51,5 +51,5 @@ public interface CommentMapper {
 
     int deleteByBlogIdOrUserId(@Param("blogId") Long blogId, @Param("userId") Long userId);
 
-
+    LinkedList<Comment> selectByBlogIdWithOffset(@Param("blogId") long blogId, @Param("offset") int offset, @Param("rows") int rows);
 }

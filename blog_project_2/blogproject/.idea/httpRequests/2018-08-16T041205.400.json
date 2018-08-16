@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-08-16T08:12:05.887+0000",
+  "status": 400,
+  "error": "Bad Request",
+  "message": "Required UserProps parameter 'userProps' is not present",
+  "path": "/api/deleteuser"
+}

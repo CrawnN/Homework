@@ -1,0 +1,512 @@
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T113455.400.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T113340.400.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T113204.500.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T112832.500.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T112230.500.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T111920.500.html
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T111501.500.html
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T111200.500.html
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T111127.500.html
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T111106.500.html
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T110952.500.html
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T110739.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"crawn" }
+
+<> 2018-08-16T110709.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T102226.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T100932.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T100508.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T095229.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T084003.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T083141.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T083030.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T082651.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T080522.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T080350.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T080053.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T043415.200.json
+
+###
+
+POST http://localhost:8080/api/updateuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"craw",   "category":0,   "token":"0" }
+
+<> 2018-08-16T043045.200.json
+
+###
+
+POST http://localhost:8080/api/updateuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"crawn",   "category":0,   "token":"0" }
+
+<> 2018-08-16T042329.200.json
+
+###
+
+POST http://localhost:8080/api/updateuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"crawn",   "category":0,   "token":"0" }
+
+<> 2018-08-16T041440.200.json
+
+###
+
+POST http://localhost:8080/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"crawn",   "category":0,   "token":"0" }
+
+<> 2018-08-16T041316.200.json
+
+###
+
+POST http://localhost:8080/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"crawn",   "category":0,   "token":"0" }
+
+<> 2018-08-16T041229.200.json
+
+###
+
+POST http://localhost:8080/api/deleteuser
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{   "userId":5,   "userName": "crawn",   "password":"crawn",   "category":0,   "token":"0" }
+
+<> 2018-08-16T041205.400.json
+
+###
+
